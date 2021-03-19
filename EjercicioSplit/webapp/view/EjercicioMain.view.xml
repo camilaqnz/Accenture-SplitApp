@@ -1,0 +1,19 @@
+<mvc:View controllerName="EjercicioSplit.EjercicioSplit.controller.EjercicioMain" 
+xmlns:mvc="sap.ui.core.mvc"
+xmlns="sap.m"
+xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+displayBlock="true">
+	
+    <Page id="page" title="{i18n>title}">
+        <content>
+
+            <List mode="SingleSelectMaster" selectionChange="onListItemPress" items="{ProductosModel>/value/}">
+                <items>
+                    <StandardListItem title="{ProductosModel>desc_producto}" type="Active" press="onListItemPress"/>
+                </items>
+            </List>    
+
+        </content>
+    </Page>
+
+</mvc:View>

@@ -1,0 +1,32 @@
+<mvc:View controllerName="EjercicioSplit.EjercicioSplit.controller.Detail" 
+xmlns:mvc="sap.ui.core.mvc"
+xmlns="sap.m"
+xmlns:f="sap.ui.layout.form"
+displayBlock="true">
+<Page >
+    <content>
+        <f:SimpleForm id="idFormDetail">
+            <f:content>
+                <Label text="Producto"/>
+                <Text text="{SeleccionModel>/desc_producto}"></Text>
+
+                <Label text="Codigo producto"/>
+                <Text text="{SeleccionModel>/codigo_producto}"></Text>
+
+                <Label text="Codigo Interno"/>
+                <Text text="{SeleccionModel>/cod_interno}"></Text>
+
+                <Label text="Fecha Creación"/>
+                <Text text="{SeleccionModel>/fecha_creacion}"></Text>
+
+                <Label text="Fecha Vencimiento"/>
+                <Text text="{SeleccionModel>/fecha_vencimiento}"></Text>
+
+                <Label text="Nombre Empresa"/>
+                <Text text="{SeleccionModel>/nombre_empresa}"></Text>
+
+            </f:content>
+        </f:SimpleForm>
+    </content>
+</Page>
+</mvc:View>
